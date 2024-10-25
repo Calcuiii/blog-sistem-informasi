@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pentingnya Integritas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fffbfb;
+        }
+        /* Navbar */
+        .navbar {
+            background-color: #4b1b82;
+            color: white;
+            padding: 20px 15px;
+            text-align:center;
+        }
+        .navbar ul {
+            list-style: none;
+        }
+        .navbar ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background-image: url('Frame-12.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+        .hero p {
+            font-size: 13px;
+        }
+
+        /* Main content */
+        .content {
+            display:flex;
+            justify-content:center;
+            padding: 30px;
+        }
+        .content .main {
+            width: 55%; 
+        }
+        .content .sidebar {
+            width: 20%;
+            margin-left: 20px;
+        }
+        .sidebar .search-box {
+            background-color: #eeebeb;
+            padding: 40px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar .categories, .popular-articles, .new-articles {
+            background-color: #eeebeb;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .categories ul, .popular-articles ul {
+            list-style: none;
+        }
+        .categories ul li, .popular-articles ul li {
+            margin-bottom: 10px;
+        }
+        .categories ul, .new-articles ul{
+            list-style: none;
+        }
+        .categories ul li, .new-articles ul li{
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #4b1b82;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+
+        .content .main img {
+            width: 100%;
+            margin-bottom: 20px; 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content .main p {
+            text-align: justify;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .footer {
+            background-color: #121212;
+            color: white;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer .logo-section, 
+        .footer .links-section, 
+        .footer .contact-section, 
+        .footer .social-section {
+            flex: 1;
+            margin: 20px;
+        }
+
+        .footer .logo-section {
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .footer .logo-section p {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .footer .logo-section img {
+            width: 300px; /* Atur lebar logo */
+            height: auto; /* Menjaga rasio aspek logo */
+        }
+
+
+        .footer .links-section ul,
+        .footer .contact-section ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-left: 26%;
+        }
+
+        .footer .links-section ul li,
+        .footer .contact-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer .links-section a,
+        .footer .contact-section a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer .links-section a:hover,
+        .footer .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-section ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        .footer .social-section ul li {
+            margin-right: 15px;
+        }
+
+        .footer .social-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        /* Footer icons */
+        .icon {
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Akademik</a></li>
+            <li><a href="#">Kehidupan Kampus</a></li>
+            <li><a href="#">Dosen & Staf</a></li>
+            <li><a href="#" class="cta-button">Daftar Sekarang</a></li>
+        </ul>
+    </div>
+    
+
+    <!-- Hero section -->
+    <section class="hero">
+        <h1>Pentingnya Integritas sebagai Fondasi Karakter <br> Mahasiswa Sistem Informasi</h1>
+        <p>2 JUN 2024 / ARTIKEL</p>
+    </section>
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="main">
+            <img src="Teks-paragraf-Anda-scaled-e1717320174203.webp" alt="Ethics and Integrity in Malaysian Public Sector">
+            <!-- Main article content -->
+            <p>Di era modern ini, kejujuran dan konsistensi dengan tindakan dan ucapan adalah sesuatu yang penting. Salah satu untuk mendapatkan sifat itu adalah dengan menerapkan prinsip integritas. Integritas adalah mutu, sifat, atau keadaan yang menunjukkan kesatuan yang utuh sehingga memiliki potensi dan kemampuan yang memancarkan kewibawaan atau kejujuran. Jadi, semua perbuatan dan perkataan yang dilakukan seseorang akan mencerminkan integritas orang tersebut. Oleh karena itu, kita perlu memiliki sebuah prinsip integritas agar mendapat kepercayaan orang lain, membangun reputasi, dan juga membangun karakter positif. Integritas adalah prinsip yang perlu dimiliki oleh semua orang, bahkan mahasiswa.</p>
+            <br>
+            <p>Seperti yang disinggung oleh Rektor Telkom University, Prof. Dr. Adiwijaya pada EJLS bahwa seluruh mahasiswa perlu memiliki integritas. Terutama mahasiswa Telkom University. Meskipun Telkom University mempunyai banyak kampus yaitu Bandung, Jakarta dan Surabaya, tetapi semuanya harus memiliki integritas yang sama. Hal ini sangat penting karena integritas tidak hanya memengaruhi reputasi individu, tetapi juga berperan penting dalam kualitas pendidikan dan profesionalisme di masa depan. Mahasiswa bisa menerapkan integritas dengan mengerjakan tugas dengan orisinal dan jujur, sehingga kompentensi yang mereka dapatkan adalah hasil dari usaha dan kemampuan sendiri. Dalam rangka memperkuat prinsip ini, Program Studi Sistem Informasi mengadakan kuliah tamu yang membahas tentang pentingnya integritas.</p>
+            <br>
+            <p>Didalam kulliah tamu tersebut, dijelaskan bahwa integritas yang sangat penting ini dipengaruhi mempunyai 2 faktor. Faktor yang pertama adalah faktor internal. Faktor internal dalam integritas ini merupakan hal yang berasal dari dalam diri individu, misalnya nilai profesionalitas dan norma seseorang. Faktor internal ini menekankan pentingnya dedikasi terhadap etika. Faktor internal juga seringkali didorang oleh keyakinan agama dan prinsip moral yang kuat. Tetapi, integritas yang bergantung hanya pada faktor internal saja belum cukup. Selain faktor internal, terdapat juga faktor eksternal yang juga berperan penting dalam mendukung integritas suatu individu.</p>
+            <br>
+            <p>Faktor eksternal juga memiliki peran penting untuk mendukung integritas individu. Dalam perkuliahan, faktor eksternal bisa meliputi sistem pengawasan dan peraturan yang diterapkan baik untuk mahasiswa maupun dosen. Misalnya, pada Telkom University Surabaya yang dilengkapi dengan CCTV yang bisa membantu mendeteksi penyalahgunaan fasilitas kampus. Tanpa adanya hukuman atau sanksi, mahasiswa diharapkan untuk mengembangkan integritas yang kuat di dalam diri mereka sendiri.</p>
+            <br>
+            <p>Pada kuliah tamu, juga diberikan contoh nyata pentingnya faktor eksternal integritas. Contoh nyata tersebut terjadi di Univeristy Teknologi Mara, Malaysia. Di sana, pernah terjadi kejadian dosen menolak suap dari mahasiswa yang melanggar aturan. Mahasiswa ini diberi sanksi harus mengulang semester depan. Namun, mahasiswa ini malah ingin melakukan suap kepada dosen. Meskipun mahasiswa itu memiliki relasi dengan orang penting, dosen tersebut tetap berpegang teguh pada integritasnya karena adanya peraturan dan pengawasan yang ketat. Hal ini menunjukkan bahwa faktor internal seperti peraturan dan pengawasan bisa memperkuat integritas seseorang.</p>
+            <br>
+            <p>Seperti yang dibahas pada kuliah tamu oleh Ainatul Fathiyah Abdul Rahim, integritas adalah prinsip yang harus dimiliki oleh mahasiswa Sistem Infomrasi untuk memastikan kualiatas pendidikan dan profesionalisme yang tinggi. Webinar kuliah tamu internasional tersebut menekankan pentingnya integritas bagi mahasiswa dan bagaimana faktor internal dan  eksternal seperti peraturan bisa membantu membangun kepercayaan dan reputasi untuk masa depan.</p>
+            <br>
+            <p>Ternyata penting sekali ya, integritas untuk mahasiswa. Kalian juga bisa mendapatkan ilmu menarik lainnya dengan mengikuti instagram Prodi Sistem Informasi di sini. Selain itu, kalian juga bisa mengunjungi websitenya untuk mendapatkan informasi lengkapnya di sini.</p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="search-box">
+                <h3>Cari Artikel</h3>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="categories">
+                <h3>Kategori Artikel</h3>
+                <br>
+                <ul>
+                    <li>Artikel (12)</li>
+                    <li>Berita (44)</li>
+                    <li>Kompetisi (9)</li>
+                    <li>Penelitian (4)</li>
+                    <li>Pengabdian (8)</li>
+                    <li>Pengumuman (13)</li>
+                </ul>
+            </div>
+            <div class="popular-articles">
+                <h3>Artikel Terpopuler</h3>
+                <br>
+                <ul>
+                    <li>Mahasiswi Sistem Informasi Menjadi Pembicara Internasional di Acara Bergengsi</li>
+                    <li>Prestasi Tiada Henti: Mahasiswa SI Telkom University Surabaya Raih Penghargaan di Innovillage 2023</li>
+                    <li>Gemerlap Dies Natalis ITTelkom Surabaya ke-5 : Technologia 2.0</li>
+                    <li>Menembus Batas Kreativitas, Mahasiswa SI Juara Lagi Bidang UI/UX Tingkat Nasional</li>
+                    <li>Meraih Inovasi dengan Teknologi : Anagata Amerta 2023</li>
+                </ul>
+            </div>
+            <div class="new-articles">
+                <h3>Artikel Terbaru</h3>
+                <br>
+                <ul>
+                    <li>Perbedaan Sistem Informasi dan Informatika, Memahami Dua Cabang Ilmu Teknologi dalam Pengembangan dan Implementasinya.</li>
+                    <li>JavaScript, Keunggulan Bahasa Pemrograman Yang Masih Ramai Hingga Saat Ini</li>
+                    <li>Webinar : Mengungkap Modus Penipuan Digital (Cerita Korban Part 1)</li>
+                    <li>Open Recruitment Asisten Laboratorium & Asisten Praktikum Prodi SI</li>
+                    <li>Explainable AI: Pengertian, Cara Kerja, Pentingnya, dan Penerapannya</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Footer -->
+<div class="footer">
+    <div class="logo-section">
+        <img src="LogoGabunganFooter-768x101.png" alt="Logo">
+        <p>Telkom University - Integrity, Innovation, Excellence</p>
+    </div>
+    <div class="links-section">
+        <h3>Tautan Bermanfaat</h3> <br>
+        <ul>
+            <li><a href="#">Telkom Indonesia</a></li>
+            <li><a href="#">Yayasan Pendidikan Telkom</a></li>
+            <li><a href="#">Univesitas Telkom Surabaya</a></li>
+            <li><a href="#">Fakultas Rekayasa Industri (FRI)</a></li>
+            <li><a href="#">Website SMB </a></li>
+        </ul>
+    </div>
+    <div class="contact-section">
+        <h3>Info Kontak</h3><br>
+        <ul>
+            <li>Telp: +62 31 8280800</li>
+            <li>Email: is@ittelkom-sby.ac.id</li>
+        </ul>
+    </div>
+    <div class="social-section">
+        <h3>Media Sosial</h3>
+        <ul>
+            <li><a href="#"><i class="icon fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="icon fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="icon fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="icon fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
